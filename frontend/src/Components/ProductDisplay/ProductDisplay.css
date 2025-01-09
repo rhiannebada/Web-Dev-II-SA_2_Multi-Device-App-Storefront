@@ -66,13 +66,13 @@ height: auto;
 }
 
 .productdisplay-right-price-new{
-    color: #ff4141;
+    color: #a23d4e;
 }
 
 .productdisplay-right button{
     padding: 20px 40px;
     width: 200px;
-    background: #ff4141;
+    background: #a23d4e;
     border-radius: 80px;
     color: white;
     border: none;
@@ -81,6 +81,10 @@ height: auto;
     margin-bottom: 40px;
     outline: none;
     cursor: pointer;
+}
+
+.productdisplay-right button:active{
+    background: #c44f63;
 }
 
 @media (max-width: 1024px) {
