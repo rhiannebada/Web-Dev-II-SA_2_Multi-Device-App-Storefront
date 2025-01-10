@@ -16,10 +16,10 @@ const Navbar = () => {
 
     return (
         <div className="navbar">
-            <div className="nav-logo">
+            <Link to='/' className="nav-logo">
                 <img src={logo} alt="logo" />
                 <p>DARK MOON</p>
-            </div>
+            </Link>
             <div className={`hamburger ${isMenuActive ? 'active' : ''}`} onClick={toggleMenu}>
                 <span className="bar"></span>
                 <span className="bar"></span>
