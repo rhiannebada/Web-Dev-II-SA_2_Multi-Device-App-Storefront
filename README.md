@@ -1,17 +1,18 @@
 # References and Resources
-    CSS position sticky vs fixed (no date) Next-Generation Mobile Apps and Cross Browser Testing Cloud. Available at: https://www.lambdatest.com/software-testing-questions/css-position-sticky-vs-fixed (Accessed: 09 January 2025). 
+
+## CSS position sticky vs fixed (no date) Next-Generation Mobile Apps and Cross Browser Testing Cloud. Available at: https://www.lambdatest.com/software-testing-questions/css-position-sticky-vs-fixed (Accessed: 09 January 2025). 
     
-    GreatStack (2024) How To Create Full Stack E-Commerce Website Using React JS, MongoDB, Express & Node JS 2024, YouTube. Available at: https://www.youtube.com/watch?v=y99YgaQjgx4&t=21720s (Accessed: 04 January 2025). 
+## GreatStack (2024) How To Create Full Stack E-Commerce Website Using React JS, MongoDB, Express & Node JS 2024, YouTube. Available at: https://www.youtube.com/watch?v=y99YgaQjgx4&t=21720s (Accessed: 04 January 2025). 
     
-    How can I use navbar link in reactjs? (2018) Stack Overflow. Available at: https://stackoverflow.com/questions/52261235/how-can-i-use-navbar-link-in-reactjs (Accessed: 09 January 2025). 
+## How can I use navbar link in reactjs? (2018) Stack Overflow. Available at: https://stackoverflow.com/questions/52261235/how-can-i-use-navbar-link-in-reactjs (Accessed: 09 January 2025). 
     
-    How to slowly transform scale with CSS? (2014) Stack Overflow. Available at: https://stackoverflow.com/questions/25119736/how-to-slowly-transform-scale-with-css (Accessed: 09 January 2025). 
+## How to slowly transform scale with CSS? (2014) Stack Overflow. Available at: https://stackoverflow.com/questions/25119736/how-to-slowly-transform-scale-with-css (Accessed: 09 January 2025). 
     
-    A simple visual cheatsheet for flexbox (no date) FLEX. Available at: https://flexbox.malven.co/ (Accessed: 05 January 2025). 
+## A simple visual cheatsheet for flexbox (no date) FLEX. Available at: https://flexbox.malven.co/ (Accessed: 05 January 2025). 
     
-    W3schools.com (no date) How To Create a Sticky Navbar. Available at: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp (Accessed: 09 January 2025). 
+## W3schools.com (no date) How To Create a Sticky Navbar. Available at: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp (Accessed: 09 January 2025). 
     
-    Weverse (no date) Weverse Shop: Dark moon merch, Weverse Shop - All Things for Fans! Available at: https://shop.weverse.io/en/shop/USD/artists/169/categories/3725?page=3 (Accessed: 04 January 2025). 
+## Weverse (no date) Weverse Shop: Dark moon merch, Weverse Shop - All Things for Fans! Available at: https://shop.weverse.io/en/shop/USD/artists/169/categories/3725?page=3 (Accessed: 04 January 2025). 
 
 
 # Additional Notes
