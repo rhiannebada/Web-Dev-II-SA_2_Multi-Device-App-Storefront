@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
 import './CSS/LogInSignup.css'
 
+// LogInSignup component to handle login and signup functionality
 const LogInSignup = () => {
-    const [state, setState] = useState("Login");
-    const [formData, setFormData] = useState({
+    const [state, setState] = useState("Login"); // State to track whether the user is logging in or signing up
+    const [formData, setFormData] = useState({ // State to hold form data for username, email, and password
         username: "",
         password: "",
         email: "",
     });
-    const [errors, setErrors] = useState({});
-
+    const [errors, setErrors] = useState({}); // State to track validation errors
+    // Handles changes in the form fields and updates the formData state
     const changeHandler = (e) => {
         setFormData({...formData, [e.target.name]: e.target.value});
     }
-
+    // Validates the form input fields based on the current state (Login/Sign Up)
     const validateForm = () => {
         let isValid = true;
         let errors = {};
@@ -42,7 +43,7 @@ const LogInSignup = () => {
         setErrors(errors);
         return isValid;
     }
-
+    // Function to handle login logic
     const login = async () => {
         if (validateForm()) {
             console.log("Login Function Executed", formData);
@@ -58,13 +59,13 @@ const LogInSignup = () => {
 
             if (responseData.success) {
                 localStorage.setItem('auth-token', responseData.token);
-                window.location.replace("/");
+                window.location.replace("/"); // Redirect to the home page
             } else {
-                alert(responseData.errors)
+                alert(responseData.errors) // Show errors if login fails
             }
         }
     }
-
+    // Function to handle signup logic
     const signup = async () => {
         if (validateForm()) {
             console.log("Signup Function Executed", formData);
@@ -79,10 +80,10 @@ const LogInSignup = () => {
             }).then((response) => response.json()).then((data) => responseData = data);
 
             if (responseData.success) {
-                localStorage.setItem('auth-token', responseData.token);
-                window.location.replace("/");
+                localStorage.setItem('auth-token', responseData.token); // Store token in localStorage
+                window.location.replace("/"); // Redirect to the home page
             } else {
-                alert(responseData.errors)
+                alert(responseData.errors) // Show errors if signup fails
             }
         }
     }
@@ -121,8 +122,8 @@ const LogInSignup = () => {
                     />
                     {errors.password && <p className="error">{errors.password}</p>}
                 </div>
-                <button onClick={() => { state === "Login" ? login() : signup() }}>Continue</button>
-                {state === "Sign Up" 
+                <button onClick={() => { state === "Login" ? login() : signup() }}>Continue</button> {/* Button to trigger either login or signup */}
+                {state === "Sign Up"  // Links to switch between Login and Sign Up
                     ? <p className="loginsignup-login">Already have an account? <span onClick={() => { setState("Login") }}>Log In Here</span></p>
                     : <p className="loginsignup-login">Create an account <span onClick={() => { setState("Sign Up") }}>Click Here</span></p>
                 }
