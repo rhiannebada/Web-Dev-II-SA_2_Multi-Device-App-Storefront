@@ -5,6 +5,7 @@ import Offers from '../Components/Offers/Offers';
 import NewCollections from '../Components/NewCollections/NewCollections';
 import NewsLetter from '../Components/NewsLetter/NewsLetter';
 
+// Shop component that serves as the main page for the shop
 const Shop = () => {
     return (
         <div>
@@ -17,4 +18,4 @@ const Shop = () => {
     )
 }
 
-export default Shop
+export default Shop // Exporting the component for use in routing or other parts of the application
