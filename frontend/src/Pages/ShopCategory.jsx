@@ -2,12 +2,13 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import './CSS/ShopCategory.css'
 import { ShopContext } from '../Context/ShopContext'
-import Item from '../Components/Item/Item';
+import Item from '../Components/Item/Item'; // Component for rendering individual product items
 
+// Component for displaying products within a specific category
 const ShopCategory = ({ category, banner }) => {
-    const { all_product = [] } = useContext(ShopContext);
-    const filteredProducts = all_product.filter(item => item.category === category);
-
+    const { all_product = [] } = useContext(ShopContext); // Accessing shared state (all products) from the ShopContext
+    const filteredProducts = all_product.filter(item => item.category === category); // Filtering products that match the given category
+    // Sort products by category, banner, and number of items displayed on the page
     return (
         <div className='shop-category'>
             <img className='shopcategory-banner' src={banner} alt={`${category} banner`} />
@@ -31,10 +32,10 @@ const ShopCategory = ({ category, banner }) => {
         </div>
     )
 }
-
+// Defining the expected props and their types
 ShopCategory.propTypes = {
-    category: PropTypes.string.isRequired,
-    banner: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired, // Category name for filtering products
+    banner: PropTypes.string.isRequired, // Banner image URL for the category
 };
 
-export default ShopCategory;
+export default ShopCategory; // Exporting the ShopCategory component for use in other parts of the application
