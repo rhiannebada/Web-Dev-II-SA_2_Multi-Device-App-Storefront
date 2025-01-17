@@ -3,11 +3,12 @@ import './Hero.css';
 import arrow_icon from '../Assets/arrow_icon.png';
 import hero_image from '../Assets/hero_image.png';
 
+// hero component to display the hero section with new collections text, image and a button to scroll to the new collections section 
 const Hero = () => {
-  const scrollToNewCollections = () => {
+  const scrollToNewCollections = () => { // Function to smoothly scroll to the "new collections" section when the button is clicked
     const section = document.getElementById('new-collections');
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: 'smooth' }); // Scroll to the section with a smooth animation
     }
   };
 
@@ -30,4 +31,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Hero; // Export the Hero component for use in other files
