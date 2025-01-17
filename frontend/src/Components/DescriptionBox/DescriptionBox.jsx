@@ -1,6 +1,7 @@
 import React from 'react'
 import './DescriptionBox.css'
 
+// component to display the product description and reviews
 const DescriptionBox = () => {
   return (
     <div className='descriptionbox'>
@@ -16,4 +17,4 @@ const DescriptionBox = () => {
   )
 }
 
-export default DescriptionBox
+export default DescriptionBox // export the component for use in other parts of the application
