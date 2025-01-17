@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './NewsLetter.css';
 
+// NewsLetter functional component
 const NewsLetter = () => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState(''); // useState hook to manage the email state, starting with an empty string
 
   // Handle subscribe button click
   const handleSubscribe = () => {
@@ -30,4 +31,4 @@ const NewsLetter = () => {
   );
 };
 
-export default NewsLetter;
+export default NewsLetter; // export the component for use in other files
