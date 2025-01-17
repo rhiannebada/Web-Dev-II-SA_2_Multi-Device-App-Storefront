@@ -4,6 +4,7 @@ import facebook_icon from '../Assets/facebook_icon.png'
 import instagram_icon from '../Assets/instagram_icon.png'
 import youtube_icon from '../Assets/youtube_icon.png'
 
+// footer component goes here, contains logo, social media icons, and copyright information.
 const Footer = () => {
   return (
     <div className='footer'>
@@ -35,5 +36,5 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer // exporting the footer component for use in other parts of the application.
 
