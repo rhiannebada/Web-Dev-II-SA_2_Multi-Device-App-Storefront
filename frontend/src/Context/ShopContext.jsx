@@ -54,7 +54,8 @@ const ShopContextProvider = ({ children }) => {
             })
             .then((response) => response.json())
             .then((data) => console.log(data)); // Handling the response from the backend
-    }});   
+    }
+}, []);   
     // Function to remove an item from the cart and send it to the backend
     const removeFromCart = useCallback((itemId) => {
         setCartItems((prev) => ({...prev, [itemId]: prev[itemId] - 1 })); // Decrementing cart quantity for the item
@@ -70,7 +71,8 @@ const ShopContextProvider = ({ children }) => {
             })
             .then((response) => response.json())
             .then((data) => console.log(data));
-    }});   
+    }
+}, []);   
     // Function to calculate the total cart amount based on cart items and product prices
     const getTotalCartAmount = useCallback(() => {
         let totalAmount = 0;
